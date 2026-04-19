@@ -1,12 +1,21 @@
-import { StrictMode } from "react";
-import { createRoot } from "react-dom/client";
-import "./index.css";
-import App from "./App.tsx";
-import { RouterProvider } from "react-router";
-import { router } from "./router/router.tsx";
+import ReactDOM from "react-dom/client";
+import { BrowserRouter, Routes, Route } from "react-router";
+import App from "./App";
+import About from "./components/About";
+import LayoutWithNavFooter from "./layout/LayoutWithNavFooter";
+import LayoutWithoutNavFooter from "./layout/LayoutWithoutNavFooter";
 
-createRoot(document.getElementById("root")!).render(
-  <StrictMode>
-    <RouterProvider router={router} />
-  </StrictMode>,
+const root = document.getElementById("root")!;
+
+ReactDOM.createRoot(root).render(
+  <BrowserRouter>
+    <Routes>
+      <Route element={<LayoutWithNavFooter />}>
+        <Route path="/" element={<App />} />
+      </Route>
+      <Route element={<LayoutWithoutNavFooter />}>
+        <Route path="/about" element={<About />} />
+      </Route>
+    </Routes>
+  </BrowserRouter>,
 );
