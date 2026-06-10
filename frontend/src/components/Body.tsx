@@ -4,9 +4,9 @@ import TrendingImage from "./TrendingImage";
 
 const Body = () => {
   return (
-    <div className="pt-[5vh] w-full">
-      <div className="px-[18%]">
-        <div className="flex gap-[17vh]">
+    <div className="pt-6 sm:pt-10 w-full">
+      <div className="px-4 sm:px-8 lg:px-16 xl:px-24">
+        <div className="flex flex-col lg:flex-row gap-8 lg:gap-12">
           {/*Body left side */}
           <LeftSideBody />
           {/*Body right side */}
@@ -14,16 +14,16 @@ const Body = () => {
         </div>
       </div>
 
-      <div className="px-[10%]">
+      <div className="px-4 sm:px-8 lg:px-16 xl:px-24">
         {/*For Trending section */}
-        <div className="py-[10vh]">
+        <div className="py-8 sm:py-12 lg:py-16">
           {/*Trending and underline */}
-          <div className="mb-[3vh]">
-            <p className="text-2xl font-bold">TRENDING</p>
-            <div className="w-full bg-black h-[0.5vh]"></div>
+          <div className="mb-4 sm:mb-6">
+            <p className="text-xl sm:text-2xl font-bold">TRENDING</p>
+            <div className="w-full bg-black h-0.5"></div>
           </div>
           {/*image and text below */}
-          <div className="flex gap-[1vh]">
+          <div className="flex flex-wrap gap-4 justify-center sm:justify-start">
             <TrendingImage
               imageSrc="myadvertise.png"
               imageAlt="advertise"

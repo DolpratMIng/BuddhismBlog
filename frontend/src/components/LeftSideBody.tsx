@@ -1,17 +1,16 @@
 const LeftSideBody = () => {
   return (
-    <div className=" text-xl w-[80vh] leading-9">
+    <div className="text-base sm:text-lg lg:text-xl leading-relaxed sm:leading-8 lg:leading-9 flex-1">
       {/*Hook */}
-      <div className="   border-b-2 border-black">
-        <div className="pb-[5vh]">
-          {" "}
-          <div className="text-xl">
-            <span className="float-left text-8xl">D</span>o you ever wonder what
-            is purpose of our existed? Why do we have to born in this world? Why
+      <div className="border-b-2 border-black">
+        <div className="pb-6 sm:pb-8 lg:pb-10">
+          <div>
+            <span className="float-left text-5xl sm:text-6xl lg:text-8xl leading-none mr-2">D</span>
+            o you ever wonder what is purpose of our existed? Why do we have to born in this world? Why
             do we need to face work, why do we need to face something that we
             dislike, why do we have encounter the suffer?
           </div>
-          <div>
+          <div className="mt-4">
             I have alway to find the answer, and find out that Buddhism have
             answer all of these question. There's a truth that the lord buddha
             have enlighten and find out all the cause why all of these happen
@@ -24,7 +23,7 @@ const LeftSideBody = () => {
         </div>
       </div>
       {/*After text can be any */}
-      <div className="pt-[5vh]">
+      <div className="pt-6 sm:pt-8 lg:pt-10">
         So before you going to read or study the content in this, I just want to
         introduce myself and how I am in the buddhism. First of all, I come from
         Thailand which is from Asia where most of the population are buddhist.
