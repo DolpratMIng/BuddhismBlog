@@ -1,38 +1,47 @@
 const LeftSideBody = () => {
   return (
-    <div className="text-base sm:text-lg lg:text-xl leading-relaxed sm:leading-8 lg:leading-9 flex-1">
+    <div className="text-base sm:text-lg lg:text-xl leading-relaxed sm:leading-8 lg:leading-9 flex-1 text-slate-700">
       {/*Hook */}
-      <div className="border-b-2 border-black">
+      <div className="border-b-2 border-sky-200">
         <div className="pb-6 sm:pb-8 lg:pb-10">
           <div>
-            <span className="float-left text-5xl sm:text-6xl lg:text-8xl leading-none mr-2">D</span>
-            o you ever wonder what is purpose of our existed? Why do we have to born in this world? Why
-            do we need to face work, why do we need to face something that we
-            dislike, why do we have encounter the suffer?
+            <span className="float-left text-5xl sm:text-6xl lg:text-8xl leading-none mr-2 bg-gradient-to-br from-sky-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">W</span>
+            elcome to CloudCare Pharmacy — your trusted partner in health and wellness.
+            We understand that navigating the world of medicines can be overwhelming.
+            That's why we've built a pharmacy that puts you first: transparent pricing,
+            expert advice from licensed pharmacists, and fast delivery right to your door.
           </div>
           <div className="mt-4">
-            I have alway to find the answer, and find out that Buddhism have
-            answer all of these question. There's a truth that the lord buddha
-            have enlighten and find out all the cause why all of these happen
-            and how to end the suffering. In this website, It will contain all
-            the blogs that what buddha enlighten so you can learn the real truth
-            of this universe. I, the author have been study lots of buddhism
-            will try my best so that you will understand the concept of the
-            buddha.
+            Whether you need prescription refills, over-the-counter remedies for that
+            stubborn cold, vitamins to boost your immune system, or specialized care
+            products, we've got you covered. Every product in our catalog is sourced
+            from FDA-approved manufacturers and stored under strict pharmaceutical
+            standards. Our team of experienced pharmacists reviews each order to ensure
+            the right dosage, the right instructions, and zero risks of interaction.
           </div>
         </div>
       </div>
       {/*After text can be any */}
       <div className="pt-6 sm:pt-8 lg:pt-10">
-        So before you going to read or study the content in this, I just want to
-        introduce myself and how I am in the buddhism. First of all, I come from
-        Thailand which is from Asia where most of the population are buddhist.
-        So since I was a child, my mom I always read the stories/tale for me.
-        One of the book that she read for me is biological of lord buddha.
-        Althought, at that time, I still don't understand anything of what she
-        telling me yet. But it is the first door that start to ignite me later
-        when I grow up and answer all the question I ask you guy readers earlier
-        what is the truth of this universe.
+        <p className="font-semibold text-sky-700 mb-3">Why Choose CloudCare?</p>
+        <ul className="space-y-3">
+          <li className="flex items-start gap-3">
+            <span className="mt-1.5 w-2 h-2 rounded-full bg-sky-400 shrink-0"></span>
+            <span><strong className="text-sky-700">Licensed Pharmacists</strong> — Every prescription is double-checked by a certified pharmacist before dispatch.</span>
+          </li>
+          <li className="flex items-start gap-3">
+            <span className="mt-1.5 w-2 h-2 rounded-full bg-purple-400 shrink-0"></span>
+            <span><strong className="text-purple-700">Free Delivery</strong> — Free next-day delivery on all orders over $25. Same-day delivery available in select areas.</span>
+          </li>
+          <li className="flex items-start gap-3">
+            <span className="mt-1.5 w-2 h-2 rounded-full bg-pink-400 shrink-0"></span>
+            <span><strong className="text-pink-700">Best Prices</strong> — Price match guarantee. We'll match any licensed pharmacy's price on identical products.</span>
+          </li>
+          <li className="flex items-start gap-3">
+            <span className="mt-1.5 w-2 h-2 rounded-full bg-sky-400 shrink-0"></span>
+            <span><strong className="text-sky-700">24/7 Support</strong> — Chat with a pharmacist anytime. We're here when you need us.</span>
+          </li>
+        </ul>
       </div>
     </div>
   );
